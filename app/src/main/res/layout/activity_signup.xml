@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8e4ff"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="Name:"
+        android:textColor="#043362"
+        android:textSize="25dp"
+        app:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Ename"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/name"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/desg"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/name"
+        android:padding="10dp"
+        android:text="Designation:"
+        android:textColor="#043362"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        app:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/Edesg"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/Ename"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/desg"
+        android:background="#FFFFFF"
+        android:fontFamily="casual"
+        android:inputType="textWebPassword"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/desg"
+        android:padding="10dp"
+        android:text="Username:"
+        android:textColor="#043362"
+        android:textSize="25dp"
+        app:fontFamily="casual"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Eusername"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Edesg"
+        android:layout_toRightOf="@+id/username"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/username"
+        android:padding="10dp"
+        android:text="Password:"
+        android:textColor="#043362"
+        android:textSize="25dp"
+        app:fontFamily="casual"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Epassword"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/password"
+        android:layout_below="@+id/Eusername"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:inputType="textWebPassword"
+        android:fontFamily="casual"
+        android:layout_marginRight="10dp"/>
+
+
+    <TextView
+        android:id="@+id/repwd"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="-10dp"
+        android:padding="10dp"
+        android:text="Re-enter"
+        android:textColor="#043362"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <EditText
+        android:id="@+id/Erepwd"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/Epassword"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/repwd"
+        android:background="#FFFFFF"
+        android:fontFamily="casual"
+        android:inputType="textWebPassword"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/repwd"
+        android:layout_marginTop="-26dp"
+        android:padding="10dp"
+        android:text="Password:"
+        android:textColor="#043362"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <Button
+        android:id="@+id/su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repwd"
+        android:layout_marginTop="75dp"
+        android:background="#003d7a"
+        android:fontFamily="casual"
+        android:padding="20dp"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Already an existing user? Login?"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textColor="#006edc"
+        android:id="@+id/li"
+        android:layout_below="@+id/su"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#043362"
+        android:id="@+id/suss"
+        android:layout_below="@+id/li"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

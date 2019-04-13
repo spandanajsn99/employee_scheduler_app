@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8e4ff"
+    tools:context=".shiftReq">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:letterSpacing=".1"
+        android:padding="10dp"
+        android:text="Shift Requests"
+        android:textColor="#043362"
+        android:textSize="23dp"
+        app:fontFamily="@font/berkshire_swash" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mon"
+        android:layout_below="@+id/title"
+        android:fontFamily="@font/almendra"
+        android:padding="15dp"
+        android:text="Monday"
+        android:textColor="#043362"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="20dp" />
+
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/mon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tue"
+        android:layout_below="@+id/mon"
+        android:fontFamily="@font/almendra"
+        android:padding="15dp"
+        android:text="Tuesday"
+        android:textColor="#043362"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp" />
+
+    <Spinner
+        android:id="@+id/spin2"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spin1"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tue"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wed"
+        android:layout_below="@+id/tue"
+        android:fontFamily="@font/almendra"
+        android:padding="15dp"
+        android:text="Wednesday"
+        android:textColor="#043362"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"/>
+
+    <Spinner
+        android:id="@+id/spin3"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spin2"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/wed"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/thurs"
+        android:layout_below="@+id/wed"
+        android:fontFamily="@font/almendra"
+        android:padding="15dp"
+        android:text="Thursday"
+        android:textColor="#043362"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"/>
+
+    <Spinner
+        android:id="@+id/spin4"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spin3"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/thurs"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/fri"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thurs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/almendra"
+        android:padding="10dp"
+        android:text="Friday"
+        android:textColor="#043362"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spin5"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spin4"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/fri"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sat"
+        android:layout_below="@+id/fri"
+        android:fontFamily="@font/almendra"
+        android:padding="15dp"
+        android:text="Saturday"
+        android:textColor="#043362"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="20dp" />
+
+    <Spinner
+        android:id="@+id/spin6"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spin5"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/sat"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sun"
+        android:layout_below="@+id/sat"
+        android:fontFamily="@font/almendra"
+        android:padding="15dp"
+        android:text="Sunday"
+        android:textColor="#043362"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"/>
+
+    <Spinner
+        android:id="@+id/spin7"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spin6"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/sun"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="SUBMIT"
+        android:background="#003d7a"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/almendra"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/sun"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
